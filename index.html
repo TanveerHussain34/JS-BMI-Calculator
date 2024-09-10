@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BMI Calculator Advanced</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form name="bmiForm">
+      <div class="bmi-calculator">
+        <h1 style="margin-bottom: 1em">BMI Calculator</h1>
+        <div class="bmi-calculator-weight">
+          <p style="margin-top: 1.8em">WEIGHT:</p>
+          <input
+            name="realWeight"
+            id="myWeight"
+            type="number"
+            placeholder="Enter weight in kg"
+            required
+          />
+        </div>
+        <div class="bmi-calculator-height">
+          <p style="margin-top: 1.8em">HEIGHT:</p>
+          <input
+            name="realHeight"
+            id="myHeight"
+            type="number"
+            step="1"
+            placeholder="Enter height in cm"
+            required
+          />
+        </div>
+        <input
+          class="calculate-button"
+          type="button"
+          value="Calculate"
+          onclick="calculateBmi()"
+          style="margin-top: 0.5em"
+        />
+        <p
+          style="
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+            font-size: 1.2em;
+            text-align: center;
+          "
+        >
+          <span id="yourbmi"></span>
+        </p>
+        <p></p>
+        <p style="text-align: center; font-size: 0.9em">
+          <span id="evaluationMessage"></span>
+        </p>
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
